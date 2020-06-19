@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>questGDrive</title>
+<title>qrGen</title>
 <link rel="shortcut icon" href="images/logo2.png" />
 <link rel="stylesheet" href="css.css">
 <script src="easy.qrcode.js"></script>
@@ -33,7 +33,7 @@
 		var qrcode = new QRCode(
 				document.getElementById("qrcode"),
 				{
-					text : "Why the fuck would you scan the QR code when the text is empty? Type something first you idiot!!",
+					text : "Why the fuck would you scan the QR code when the textoox is empty? Type something first you idiot!!",
 					width : 300,
 					height : 300,
 					colorDark : '#000000',
@@ -47,6 +47,9 @@
 		function genqr() {
 			var text = document.getElementById('textbox').value;
 			qrcode.makeCode(text);
+			if(text == ""){
+				qrcode.makeCode("Why the fuck would you scan the QR code when the textbox is empty? Type something first you idiot!!");
+			}
 		}
 	</script>
 	<br>
