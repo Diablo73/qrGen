@@ -1,9 +1,9 @@
 header {
 	background: rgb(0,0,0);
-background: -moz-radial-gradient(circle, rgba(0,0,0,1) 18%, rgba(18,18,18,1) 50%, rgba(38,38,38,1) 82%);
-background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 18%, rgba(18,18,18,1) 50%, rgba(38,38,38,1) 82%);
-background: radial-gradient(circle, rgba(0,0,0,1) 18%, rgba(18,18,18,1) 50%, rgba(38,38,38,1) 82%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#262626",GradientType=1);
+	background: -moz-radial-gradient(circle, rgba(0,0,0,1) 18%, rgba(18,18,18,1) 50%, rgba(38,38,38,1) 82%);
+	background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 18%, rgba(18,18,18,1) 50%, rgba(38,38,38,1) 82%);
+	background: radial-gradient(circle, rgba(0,0,0,1) 18%, rgba(18,18,18,1) 50%, rgba(38,38,38,1) 82%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#262626",GradientType=1);
 	border-radius: 100px;
 }
 
@@ -27,17 +27,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 
 body{
 	background: rgb(0,0,0);
-background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 33%, rgba(34,34,34,1) 50%, rgba(38,38,38,1) 66%, rgba(0,0,0,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 33%, rgba(34,34,34,1) 50%, rgba(38,38,38,1) 66%, rgba(0,0,0,1) 100%);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 33%, rgba(34,34,34,1) 50%, rgba(38,38,38,1) 66%, rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+	background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 33%, rgba(34,34,34,1) 50%, rgba(38,38,38,1) 66%, rgba(0,0,0,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 33%, rgba(34,34,34,1) 50%, rgba(38,38,38,1) 66%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 33%, rgba(34,34,34,1) 50%, rgba(38,38,38,1) 66%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 }
 
 .heading {
 	text-align: center;
 	font-size: 42px;
 	font-weight: bold;
-	color: white;
+	color: #ffffff;
+	font-family: calibri;
 }
 
 .name {
@@ -49,16 +50,31 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 	color: white;
 }
 
+.donate {
+	color: #ffffff;
+	font-size: 32px;
+	text-align: center;
+	font-family: calibri;
+}
+
+.label {
+	color: #eb3e31;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: calibri;
+}
+
 .content {
-    width: 370px;
-	height: 370px;
+    width: 400px;
+	height: 400px;
+	/* text-align: right; */
     background: #ffffff;
     padding: 25px;
 	position: absolute;
     margin-top: 0 auto;
     margin-bottom: 0 auto;
     /*margin-right: 50px;*/
-    margin-left: 100px;
+    /* margin-left: 100px; */
     border-radius: 25px;
-	vertical-align: middle;
+	vertical-align: top;
 }

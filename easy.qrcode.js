@@ -1995,6 +1995,29 @@
 
         this._oDrawing.draw(this._oQRCode);
     };
+	
+	QRCode.prototype.colorD = function(dark) {
+        this._htOption.colorDark = dark;
+        //this._htOption.colorLight = light;
+
+        this._oDrawing.draw(this._oQRCode);
+    };
+	QRCode.prototype.colorL = function(light) {
+        //this._htOption.colorDark = dark;
+        this._htOption.colorLight = light;
+
+        this._oDrawing.draw(this._oQRCode);
+    };
+	QRCode.prototype.colorQ = function(qz) {
+        this._htOption.quietZoneColor = qz;
+
+        this._oDrawing.draw(this._oQRCode);
+    };
+	QRCode.prototype.dotS = function(scale) {
+        this._htOption.dotScale = scale;
+
+        this._oDrawing.draw(this._oQRCode);
+    };
 
 
 

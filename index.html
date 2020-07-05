@@ -19,60 +19,59 @@
 	<p class="heading">QR Code Generator</p>
 	<p class="name">- by &nbsp; Ashul Gupta</p>
 	<h2></h2>
+
 	<div style="text-align: left; display: inline-block;">
-		<textarea name="textbox" rows="15" cols="60"
-			placeholder="Type here....... Don't type more than 4 magnet links length of text"
-			id="textbox" onkeyup="genqr()" style="font-size: 20px;"></textarea>
+		<textarea name="textbox" rows="15" cols="40"
+			placeholder="Type here....... Don't mess with the options if you aren't well-versed with the working of a QR Code....... Those who know, how about guessing the logic behind Dot Scale inputs; submit it in the feedback section"
+			id="textbox" onkeyup="genqr()"
+			style="font-size: 20px; margin-left: 20px; text-align: justify;"></textarea>
 	</div>
-	<div id="qrcode" class="content"
-		style="display: inline-block; padding-left: 100px;"
-		onclick="download();"></div>
+
+	<div
+		style="display: inline-block; vertical-align: top; text-align: center; padding: 50px;">
+		<label for="cold" class="label">Color Dark &emsp;</label> <input
+			type="color" value="#000000" id="cold" onmouseout="colorD()"
+			style="width: 75px"><br>
+		<br>
+		<br>
+		<br> <label for="coll" class="label">Color Light &emsp;</label> <input
+			type="color" value="#ffffff" id="coll" onmouseout="colorL()"
+			style="width: 75px"><br>
+		<br>
+		<br>
+		<br> <label for="qz" class="label">Quiet Zone &emsp;</label> <input
+			type="color" value="#ffffff" id="qz" onmouseout="colorQ()"
+			style="width: 75px"><br>
+		<br>
+		<br>
+		<br> <label for="dsc" class="label">Dot Scale &emsp;</label> <input
+			type="number" id="dsc" style="width: 75px;" onkeyup="dots()"><br>
+		<br>
+		<br>
+		<br>
+
+	</div>
+
+	<div class="content" style="display: inline-block;">
+		<div id="qrcode" onclick="download();"></div>
+	</div>
 
 
-	<script>
-		var qrcode = new QRCode(
-				document.getElementById("qrcode"),
-				{
-					text : "Why the fuck would you scan the QR code when the textoox is empty? Type something first you idiot!!",
-					width : 300,
-					height : 300,
-					colorDark : '#000000',
-					colorLight : '#ffffff',
-					logo : "images/logo4.png",
-				//logoWidth: undefined,
-				//logoHeight: undefined,
-				//logoBackgroundColor: '#ffffff',
-				//logoBackgroundTransparent: true
-				});
-		function genqr() {
-			var text = document.getElementById('textbox').value;
-			qrcode.makeCode(text);
-			if(text == ""){
-				qrcode.makeCode("Why the fuck would you scan the QR code when the textbox is empty? Type something first you idiot!!");
-			}
-		}
-	</script>
 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
 	<div style="text-align: left; display: inline-block;">
-		<iframe
-			src="https://docs.google.com/forms/d/e/1FAIpQLSe5JKp1P6mZrVwb-0i56T30aLUxDdFxv_6KM-_FRaifF4TjCw/viewform?embedded=true"
-			width="640" height="480" frameborder="0" marginheight="0"
-			marginwidth="0">Loading…</iframe>
-	</div>
-	<div style="display: inline-block; padding-left: 250px;">
-		<p style="color: #ffffff; font-size: 32px; text-align: center;">Donate
-			via</p>
-		<input type="image" src="images/paytm.png" class="pay"><br>
-		<br> <input type="image" src="images/gpay.png" class="pay">
-	</div>
-
-	<!--addthis-->
-	<script type="text/javascript"
-		src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5eebbbc7f9d77cc6"></script>
-
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5JKp1P6mZrVwb-0i56T30aLUxDdFxv_6KM-_FRaifF4TjCw/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div> 
+  <div style="display: inline-block; padding-left: 250px;">
+  <p class="donate">Donate via</p>
+  <input type="image" src="images/paytm.png" class="pay"><br><br>
+  <input type="image" src="images/gpay.png" class="pay"> 
+  </div>
+  
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5eebbbc7f9d77cc6"></script>
+	<script src="js.js"></script>
 </body>
 </html>
